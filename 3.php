@@ -1,9 +1,13 @@
 <?php
 function numrap($numra, $numri){
-	$numra=40;
-	$numri=70;
 
-	$numrap=(50/(40+70))*100;
+
+	$num=(50/($numra+$numri))*100;
+	return $num;
 
 }
-echo ("A percentagem de rapazes e raparigas é  ") .$numrap. ("%");
+	$numra=60;
+	$numri=50;
+	$tes=numrap($numra, $numri);
+echo ("A percentagem de rapazes e raparigas é  ".$tes. "% " );
+?>
